@@ -1,14 +1,30 @@
-import { View, Text } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { View, Text, ScrollView, TouchableOpacity, ImageBackground } from "react-native";
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   return (
-    <View style={{
-      flex: 1,
-      alignItems: "center",
-      justifyContent: "center",
+<ScrollView style={{
+  padding: 20,
+}}>
+  <View style={{
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginBottom: 20,
+  }}>
+    <Text style={{
+      fontSize: 18
     }}>
-      <Text>Home Screen</Text>
-    </View>
+      Hello John Doe
+    </Text>
+    <TouchableOpacity onPress={()=>navigation.openDrawer()}>
+      <ImageBackground 
+      source={require('../../assets/user-profile.jpg')}
+      style={{width: 35, height: 35}}
+      imageStyle={{borderRadius:25}}
+      />
+    </TouchableOpacity>
+  </View>
+</ScrollView>
   );
 };
 
