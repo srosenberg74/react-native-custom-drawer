@@ -1,5 +1,4 @@
 import { View, Text, SafeAreaView, TouchableOpacity } from "react-native";
-import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 
 const OnboardingScreen = ({navigation}) => {
   return (

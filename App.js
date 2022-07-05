@@ -1,7 +1,5 @@
 import {
   StyleSheet,
-  Text,
-  View,
   SafeAreaView,
   StatusBar,
   Platform,
@@ -9,8 +7,6 @@ import {
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import "react-native-gesture-handler";
-import HomeScreen from "./src/screens/HomeScreen";
-import AuthStack from "./src/navigation/AuthStack";
 import AppStack from "./src/navigation/AppStack";
 
 const Stack = createNativeStackNavigator();
